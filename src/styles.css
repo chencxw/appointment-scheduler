@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url(../../fonts/glacialindifference-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url(../../fonts/glacialindifference-bold-webfont.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@layer components {
+    body {
+        @apply bg-off-white text-primary-black font-glacial tracking-widest;
+    }
+
+    header{
+        @apply pt-6 px-6 tracking-widest;
+    }
+
+    header a {
+        @apply uppercase font-bold text-2xl;
+    }
+
+    header svg {
+        @apply inline-block align-middle fill-white;
+    }
+
+    td.selected {
+        @apply bg-accent;
+    }
+
+    th {
+        @apply px-4;
+    }
+
+    td {
+        @apply tracking-wider px-4 pt-4;
+    }
+
+    td:hover svg {
+        @apply fill-hover-gray;
+    }
+
+    li:hover svg {
+        @apply fill-accent-light;
+    }
+
+    .btn-blue {
+        @apply bg-accent text-off-white p-button rounded-lg cursor-pointer;
+    }
+
+    .btn-blue:hover {
+        @apply bg-accent-light;
+    }
+
+    .accounts-tab {
+        @apply hidden;
+    }
+
+    .appointments-tab {
+        @apply block;
+    }
+
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

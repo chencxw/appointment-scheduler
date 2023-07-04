@@ -1,0 +1,9 @@
+# dependencies
+/node_modules
+
+# files
+dbinfo-copy.php
+dbinfo.php
+
+# misc
+.DS_Store
